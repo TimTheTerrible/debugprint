@@ -6,12 +6,12 @@
 #define FALSE 0
 #define TRUE 1
 
-#define DEBUG_NONE  0x00
-#define DEBUG_ERROR 0x01
-#define DEBUG_WARN  0x02
-#define DEBUG_INFO  0x04
-#define DEBUG_TRACE 0x08
-#define DEBUG_ALL   0xFF
+#define DEBUG_NONE  0x0000
+#define DEBUG_ERROR 0x0001
+#define DEBUG_WARN  0x0002
+#define DEBUG_INFO  0x0004
+#define DEBUG_TRACE 0x0008
+#define DEBUG_ALL   0xFFFF
 
 extern long Debug;
 
