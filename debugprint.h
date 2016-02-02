@@ -15,6 +15,8 @@
 
 extern long Debug;
 
-void debugprint (long debug_flag, const char *format, ...);
+extern void debugprint (long debug_flag, const char *format, ...);
+extern char *byte_to_binary( uint8_t );
+extern char *word_to_binary( uint16_t );
 
 #endif
