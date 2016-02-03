@@ -1,7 +1,9 @@
 #ifndef _debugprint_h_
 #define _debugprint_h_
 
-#define MAX_BUF_LEN 64
+#include <stdint.h>
+
+#define MAX_BUF_LEN 1024
 
 #define FALSE 0
 #define TRUE 1
@@ -16,7 +18,7 @@
 extern long Debug;
 
 extern void debugprint (long debug_flag, const char *format, ...);
-extern char *byte_to_binary( uint8_t );
-extern char *word_to_binary( uint16_t );
+extern const char *byte_to_binary( uint8_t );
+extern const char *word_to_binary( uint16_t );
 
 #endif
